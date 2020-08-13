@@ -25,13 +25,9 @@ public class FibonacciRow {
     }
 
     public static int fibonacciRec(int n){
-        if (n==1) {
-            return 1;
+        if (n < 2) {
+            return n;
         }
-        else if (n==0) {
-            return 0;
-        }
-
         else {
             return fibonacciRec(n - 1) + fibonacciRec(n - 2);
         }
